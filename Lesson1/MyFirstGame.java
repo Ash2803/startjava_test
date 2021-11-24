@@ -20,6 +20,7 @@ public class MyFirstGame
 
         if(compNum == playerNum) {
             System.out.println("Поздравляю, число угадано!");
+            System.out.print(playerNum);
         }
     }
 }
