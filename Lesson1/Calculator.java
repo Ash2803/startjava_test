@@ -7,17 +7,16 @@ public class Calculator {
 
         if(sign == '+') {
             System.out.println(b + a);
-        } if(sign == '-') {
+        } else if(sign == '-') {
             System.out.println(a - b);
-        } if(sign == '*') {
+        } else if(sign == '*') {
             System.out.println(a * b);
-        } if(sign == '/') {
+        } else if(sign == '/') {
             System.out.println(b / a);
-        } if(sign == '%') {
+        } else if(sign == '%') {
             System.out.println(b % a);
-        } if(sign == '^') {
-            System.out.println(Math.pow(a,2));
-            System.out.println(Math.pow(b,4));
-        }
+        } for (int i = 1; i <= 1024; i *= 2) {
+			System.out.println(i * a);
+		}
     }
 }
