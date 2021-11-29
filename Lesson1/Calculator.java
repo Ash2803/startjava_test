@@ -16,7 +16,7 @@ public class Calculator {
         } else if(sign == '%') {
             System.out.println(b % a);
         } for (int i = 1; i <= 1024; i *= 2) {
-			System.out.println(i * a);
-		}
+	    System.out.println(i * a);
+	}
     }
 }
