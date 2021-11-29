@@ -16,7 +16,8 @@ public class Calculator {
         } if(sign == '%') {
             System.out.println(b % a);
         } if(sign == '^') {
-            System.out.println(a * 2);
+            System.out.println(Math.pow(a,2));
+            System.out.println(Math.pow(b,4));
         }
     }
 }
