@@ -15,10 +15,12 @@ public class Calculator {
             System.out.println(b / a);
         } else if(sign == '%') {
             System.out.println(b % a);
-        }
-
-        for (int i = 1; i <= b; i++) {
-            System.out.println(result = result * a);
+        } else if(sign == '^') {
+            int result = 1;
+            for(int i = 1; i <= b; i++) {
+                result *= a;
             }
+            System.out.println(result);
         }
     }
+}
