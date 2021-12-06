@@ -7,7 +7,7 @@ public class CalculatorTest {
         Scanner scanner = new Scanner(System.in);
 
         boolean right = true;
-        while(right == true) {
+        while(right) {
             System.out.println("Enter the first number");
             calcOne.setA(scanner.nextInt());
             System.out.println("Enter the math sign");
