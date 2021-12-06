@@ -4,7 +4,7 @@ public class WolfTest {
         Wolf wolfOne = new Wolf();
         wolfOne.sex = "stallion";
         wolfOne.nickname = "Jerry";
-        wolfOne.weight = + 8.2f;
+        wolfOne.weight = 8.2f;
         wolfOne.age = 4;
         wolfOne.color = "Brown";
         System.out.println("The dog is a " + wolfOne.sex);
