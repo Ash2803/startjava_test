@@ -1,71 +1,51 @@
 public class Calculator {
     
     private int a;
-  
+    private int b;
+    private char sign;
+
     public int getA() {
       return a;
     }
     
-    public void setA(int calcOneA) {
-       this.a = calcOneA;
+    public void setA(int a) {
+       this.a = a;
     }
   
-    private int b;
+
     
     public int getB() {
       return b;
     }
     
-    public void setB(int calcOneB) {
-       this.b = calcOneB;
+    public void setB(int a) {
+       this.b = a;
     }
-        
-    private char sign;
-  
+
     public char getSign() {
       return sign;
     }
-    
-    public void setSign(char calcOneSign) {
-        this.sign = calcOneSign;
+
+    public void setSign(char sign) {
+        this.sign = sign;
     }
 
-    private String y;
-
-    public String getY() {
-        return y;
-    }
-
-    public void setY(String calcOneY) {
-        this.y = y;
-    }
-
-    private String n;
-
-    public String getN() {
-        return n;
-    }
-
-    public void setN(String calcOneN) {
-        this.n = n;
-    }
-
-    public double getResult() {
+    public double calculate() {
         switch(sign) {
-        case '+':
-            return a + b;
-        case '-' :
-            return a - b;
-        case '/' :
-            return a / b;
-        case '*' :
-            return a * b;
-        case '%' :
-            return a % b;
-        case '^' :
-            return Math.pow(a, b);
-        default :
-            return 0;
+            case '+':
+                return a + b;
+            case '-' :
+                return a - b;
+            case '/' :
+                return a / b;
+            case '*' :
+                return a * b;
+            case '%' :
+                return a % b;
+            case '^' :
+                return Math.pow(a, b);
+            default :
+                return 0;
         }
     }
 }
