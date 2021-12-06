@@ -14,9 +14,9 @@ public class CalculatorTest {
             calcOne.setSign(scanner.next().charAt(0));
             System.out.println("Enter the second number");
             calcOne.setB(scanner.nextInt());
-            System.out.println(calcOne.calculate());
 
             calcOne.calculate();
+
 
             do {
                 System.out.println("Do you want to contiune? [Yes/No]");
@@ -25,3 +25,4 @@ public class CalculatorTest {
         }
     }
 }
+
