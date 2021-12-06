@@ -30,10 +30,10 @@ public class CalculatorTest {
             } if(result.equalsIgnoreCase("Yes")) {    
                 System.out.println("Great! Let's get started.");
                 done = true;
-        	} else if(result.equalsIgnoreCase("No")) {
+	    } else if(result.equalsIgnoreCase("No")) {
                 System.out.println("Goodbye!");
                 done = false;
-    		}
-		}
-  	}
+	    }
+	}
+    }
 }
