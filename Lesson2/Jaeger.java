@@ -26,11 +26,11 @@ public class Jaeger {
         System.out.println("He can launch rockets");
     }
 
-    public String flying() {
+    public String fly() {
         return "He can fly over the world";
     }
 
-    public void charging() {
+    public void charge() {
         System.out.println("And sometimes he need to charge his battery");
     }
 
@@ -42,7 +42,7 @@ public class Jaeger {
         System.out.println("He is the greatest one!");
     }
 
-    public void riding() {
+    public void ride() {
         System.out.println("He can ride bears and other animals");
     }
 }
