@@ -17,7 +17,6 @@ public class CalculatorTest {
 
             calcOne.calculate();
 
-
             do {
                 System.out.println("Do you want to contiune? [Yes/No]");
                 answer = scanner.next();
