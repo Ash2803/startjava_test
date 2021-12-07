@@ -1,22 +1,16 @@
 public class JaegerTest {
 
     public static void main(String[] args) {
-        Jaeger robotOne = new Jaeger();
-        robotOne.setName("Cherno");
-        robotOne.setWeight(123.2f);
-        robotOne.setStrength(10);
-        System.out.println("This one is a " + robotOne.getName());
+        Jaeger robotOne = new Jaeger("Cherno", 123.2f, 10);
+        System.out.println("The name is " + robotOne.getName());
         System.out.println("His weight is " + robotOne.getWeight());
-        System.out.println("His strength is " + robotOne.getStrength());
+        System.out.println("His strength = " + robotOne.getStrength());
 
         robotOne.launchRockets();
         System.out.println(robotOne.flying());
         robotOne.charging();
 
-        Jaeger robotTwo = new Jaeger();
-        robotTwo.setName("Putin");
-        robotTwo.setWeight(999.2f);
-        robotTwo.setStrength(9999);
+       Jaeger robotTwo = new Jaeger("Putin", 999.2f, 9999);
         System.out.println("This one is our lovely " + robotTwo.getName() + ", he is immortal!");
         System.out.println("His weight is " + robotTwo.getWeight());
         System.out.println("His strength is " + robotTwo.getStrength() + " or more, nobody knows for sure.");
@@ -25,10 +19,7 @@ public class JaegerTest {
         robotTwo.dominate();
         robotTwo.riding();
 
-        Jaeger robotThree = new Jaeger();
-        robotThree.setName("Laguna");
-        robotThree.setWeight(173.2f);
-        robotThree.setStrength(20);
+        Jaeger robotThree = new Jaeger("Laguna", 173.2f, 20);
         System.out.println("This one is a " + robotThree.getName());
         System.out.println("His weight is " + robotThree.getWeight());
         System.out.println("His strength is " + robotThree.getStrength());

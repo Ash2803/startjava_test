@@ -1,31 +1,25 @@
 public class Jaeger {
 
-    private String name;
+    private  String name;
     private float weight;
     private int strength;
 
-    public String getName() {
-        return name;
+    public Jaeger(String name, float weight, int strength) {
+        this.name = name;
+        this.weight = weight;
+        this.strength = strength;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public float getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
-
     public int getStrength() {
         return strength;
-    }
-
-    public void setStrength(int strength) {
-        this.strength = strength;
     }
 
     public void launchRockets() {
