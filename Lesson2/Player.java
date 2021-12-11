@@ -1,17 +1,23 @@
-import java.util.Scanner;
-
 public class Player {
-    Scanner scanner = new Scanner(System.in);
+
     private String name;
     private int num;
 
-    public Player() {
-        this.name = scanner.next();
+    public Player(String name) {
+        this.name = name;
+    }
+
+      public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {
         return name;
     }
+
+      public void setNum(int num) {
+        this.num = num;
+    }    
 
     public int getNum() {
         return num;
