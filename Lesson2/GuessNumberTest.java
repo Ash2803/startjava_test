@@ -16,7 +16,7 @@ public class GuessNumberTest {
             System.out.println("Here is " + pl2.getName());
 
             GuessNumber game = new GuessNumber(pl1, pl2);
-            game.gaming();
+            game.start();
 
             do {
                 System.out.println("Do you want to contiune? [Yes/No]");
