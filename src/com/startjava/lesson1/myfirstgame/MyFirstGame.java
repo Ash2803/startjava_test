@@ -1,3 +1,5 @@
+package com.startjava.lesson1.myfirstGame;
+
 public class MyFirstGame {
     public static void main(String[] args) {
         int compNum = (int) (Math.random() * 100);

@@ -1,3 +1,5 @@
+package com.startjava.lesson2_3.robot;
+
 public class JaegerTest {
 
     public static void main(String[] args) {
@@ -7,8 +9,8 @@ public class JaegerTest {
         System.out.println("His strength = " + robotOne.getStrength());
 
         robotOne.launchRockets();
-        System.out.println(robotOne.flying());
-        robotOne.charging();
+        System.out.println(robotOne.fly());
+        robotOne.charge();
 
        Jaeger robotTwo = new Jaeger("Putin", 999.2f, 9999);
         System.out.println("This one is our lovely " + robotTwo.getName() + ", he is immortal!");
@@ -17,7 +19,7 @@ public class JaegerTest {
 
         robotTwo.explode();
         robotTwo.dominate();
-        robotTwo.riding();
+        robotTwo.ride();
 
         Jaeger robotThree = new Jaeger("Laguna", 173.2f, 20);
         System.out.println("This one is a " + robotThree.getName());
@@ -25,7 +27,7 @@ public class JaegerTest {
         System.out.println("His strength is " + robotThree.getStrength());
 
         robotThree.launchRockets();
-        System.out.println(robotThree.flying());
-        robotThree.charging();
+        System.out.println(robotThree.fly());
+        robotThree.charge();
     }
 }

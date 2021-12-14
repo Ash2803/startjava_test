@@ -1,3 +1,5 @@
+package com.startjava.lesson1.variable;
+
 public class Variable {
     
     public static void main(String[] args) {
@@ -12,9 +14,9 @@ public class Variable {
 
         System.out.println(cpu);
         System.out.println(ram);
-        System.out.println(vram);
+        System.out.println(vRam);
         System.out.println(battery);
-        System.out.println(ghz);
+        System.out.println(gHz);
         System.out.println(windows);
         System.out.println(notebook);
         System.out.println(powerful);
