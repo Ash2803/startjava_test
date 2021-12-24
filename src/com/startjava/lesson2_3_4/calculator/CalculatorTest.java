@@ -10,18 +10,13 @@ public class CalculatorTest {
 
         String answer = "Yes";
         while(!"No".equalsIgnoreCase(answer)) {
-            System.out.println("Enter the first number");
-            calcOne.setA(scanner.nextInt());
-            System.out.println("Enter the math sign");
-            calcOne.setSign(scanner.next().charAt(0));
-            System.out.println("Enter the second number");
-            calcOne.setB(scanner.nextInt());
-
-            calcOne.calculate();
+            System.out.print("Enter the mathematical expression: ");
+            calcOne.splitting(scanner.nextLine());
+            System.out.println(calcOne.calculate());
 
             do {
                 System.out.println("Do you want to contiune? [Yes/No]");
-                answer = scanner.next();
+                answer = scanner.nextLine();
             } while (!"Yes".equalsIgnoreCase(answer) && !"No".equalsIgnoreCase(answer));
         }
     }

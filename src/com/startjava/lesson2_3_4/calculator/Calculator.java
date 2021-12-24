@@ -4,47 +4,31 @@ public class Calculator {
     
     private int a;
     private int b;
-    private char sign;
+    private char mathSign;
+    public String expression;
 
-    public int getA() {
-      return a;
-    }
-    
-    public void setA(int a) {
-       this.a = a;
-    }
-
-    public int getB() {
-      return b;
-    }
-    
-    public void setB(int a) {
-       this.b = a;
+    public void splitting(String expression) {
+        String[] aExpression = expression.split(" ");
+        a = Integer.parseInt(aExpression[0]);
+        b = Integer.parseInt(aExpression[2]);
+        mathSign = aExpression[1].charAt(0);
     }
 
-    public char getSign() {
-      return sign;
-    }
-
-    public void setSign(char sign) {
-        this.sign = sign;
-    }
-
-    public double calculate() {
-        switch(sign) {
+    public int calculate() {
+        switch(mathSign) {
             case '+':
                 return a + b;
-            case '-' :
+            case '-':
                 return a - b;
-            case '/' :
+            case '/':
                 return a / b;
-            case '*' :
+            case '*':
                 return a * b;
-            case '%' :
+            case '%':
                 return a % b;
-            case '^' :
-                return Math.pow(a, b);
-            default :
+            case '^':
+                return (int) Math.pow(a, b);
+            default:
                 return 0;
         }
     }
