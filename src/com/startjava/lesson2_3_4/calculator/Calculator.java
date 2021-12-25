@@ -1,20 +1,13 @@
 package com.startjava.lesson2_3_4.calculator;
 
 public class Calculator {
-    
-    private int a;
-    private int b;
-    private char mathSign;
-    public String expression;
 
-    public void splitting(String expression) {
-        String[] aExpression = expression.split(" ");
-        a = Integer.parseInt(aExpression[0]);
-        b = Integer.parseInt(aExpression[2]);
-        mathSign = aExpression[1].charAt(0);
-    }
+    public int calculate(String expression) {
+        String[] arrExpression = expression.split(" ");
+        int a = Integer.parseInt(arrExpression[0]);
+        int b = Integer.parseInt(arrExpression[2]);
+        char mathSign = arrExpression[1].charAt(0);
 
-    public int calculate() {
         switch(mathSign) {
             case '+':
                 return a + b;

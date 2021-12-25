@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class CalculatorTest {
 
     public static void main(String[] args) {
-        Calculator calcOne = new Calculator();
+        Calculator calc = new Calculator();
         Scanner scanner = new Scanner(System.in);
 
         String answer = "Yes";
         while(!"No".equalsIgnoreCase(answer)) {
             System.out.print("Enter the mathematical expression: ");
-            calcOne.splitting(scanner.nextLine());
-            System.out.println(calcOne.calculate());
+            System.out.println(calc.calculate(scanner.nextLine()));
 
             do {
                 System.out.println("Do you want to contiune? [Yes/No]");
